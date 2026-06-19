@@ -84,13 +84,22 @@ button{cursor:pointer;border:none;font-family:var(--font-body)}
   background:radial-gradient(ellipse 70% 60% at 60% 0%,rgba(255,107,53,.14) 0%,transparent 70%);
   text-align:center;
 }
-#hero h1{
-  font-family:var(--font-head);font-size:clamp(2rem,5vw,3.4rem);
-  font-weight:800;line-height:1.1;
-  background:linear-gradient(135deg,#fff 30%,var(--accent2));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  margin-bottom:12px;
+
+  
+#hero h1 {
+  font-family: var(--font-head);
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  /* 🌟 CORREGIDO: Eliminamos el degradado claro y aplicamos un color oscuro sólido y elegante */
+  color: #2E2524 !important; 
+  -webkit-text-fill-color: initial !important; /* Cancela el borrado de color anterior */
+  background: none !important; /* Elimina el degradado viejo */
+  margin-bottom: 12px;
 }
+
+
+  
 #hero p{color:var(--muted);font-size:1.05rem;max-width:480px;margin:0 auto 32px}
 
 /* ── CATEGORÍAS ── */
@@ -101,6 +110,10 @@ button{cursor:pointer;border:none;font-family:var(--font-body)}
   background: rgba(240, 223, 221, 0.85); 
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
+  
+  /* 🌟 EFECTO SOMBRA: Le da volumen y separa visualmente las categorías del resto del contenido */
+  box-shadow: 0 4px 12px rgba(18, 16, 16, 0.05); 
+}
 }
 
 
