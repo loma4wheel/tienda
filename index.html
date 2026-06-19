@@ -26,14 +26,16 @@ button{cursor:pointer;border:none;font-family:var(--font-body)}
 ::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
 
 /* ── TOPBAR ── */
-#topbar{
-  position:fixed;top:0;left:0;right:0;z-index:100;
-  display:flex;align-items:center;gap:16px;
-  padding:0 24px;height:64px;
-  background:rgba(10,10,15,.88);
-  backdrop-filter:blur(18px);
-  border-bottom:1px solid var(--border);
+#topbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; gap: 12px;
+  padding: 0 16px; height: 64px;
+  /* 🌟 CORREGIDO: Ahora usa un fondo rosa claro semitransparente con desenfoque */
+  background: rgba(240, 223, 221, 0.85); 
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border);
 }
+
 #logo {
   font-family: var(--font-head);
   font-size: 1.1rem !important; /* Reduce drásticamente el tamaño base */
