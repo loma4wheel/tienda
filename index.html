@@ -94,21 +94,15 @@ button{cursor:pointer;border:none;font-family:var(--font-body)}
 #hero p{color:var(--muted);font-size:1.05rem;max-width:480px;margin:0 auto 32px}
 
 /* ── CATEGORÍAS ── */
-#cats-wrap{
-  display:flex;
-  gap:10px;
-  overflow-x:auto;
-  padding:14px 24px;
-  scrollbar-width:none;
-
-  position:sticky;
-  top:64px; /* escritorio */
-
-  z-index:90;
-  background:rgba(10,10,15,.9);
-  backdrop-filter:blur(12px);
-  border-bottom:1px solid var(--border);
+#cats-wrap {
+  display: flex; gap: 10px; overflow-x: auto; padding: 14px 24px; scrollbar-width: none;
+  position: sticky; top: 64px; z-index: 90;
+  /* 🌟 CORREGIDO: Mismo tono rosa claro semitransparente para quitar la franja negra */
+  background: rgba(240, 223, 221, 0.85); 
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
 }
+
 
 #cats-wrap::-webkit-scrollbar{
   display:none;
