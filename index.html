@@ -35,11 +35,14 @@ button{cursor:pointer;border:none;font-family:var(--font-body)}
   border-bottom:1px solid var(--border);
 }
 #logo{
-  font-family:var(--font-head);font-size:1.45rem;font-weight:800;
+  font-family:var(--font-head);
+  font-size: clamp(1rem, 4vw, 1.35rem); /* Ajusta el tamaño automáticamente según la pantalla */
+  font-weight:800;
   background:linear-gradient(135deg,var(--accent),var(--accent2));
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;
   white-space:nowrap;
 }
+
 #search-wrap{flex:1;max-width:560px;margin:0 auto;position:relative;}
 #search-input{
   width:100%;padding:10px 16px 10px 44px;
